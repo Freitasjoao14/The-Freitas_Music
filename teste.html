@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página Dividida em Duas Partes</title>
+  <style>
+
+
+    /* Container flex para dividir em duas colunas */
+    .container {
+      display: flex;
+      height: 100%;
+    }
+
+    /* Estilo comum para os dois lados */
+    .lado-esquerdo,
+    .lado-direito {
+      flex: 1; /* Ocupa metade da largura cada um */
+      padding: 20px;
+      box-sizing: border-box;
+      overflow-y: auto;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lado-esquerdo">
+      <h2>Lado Esquerdo</h2>
+      <p>Esse é o conteúdo do lado esquerdo. Pode colocar texto, imagens, listas, etc.</p>
+    </div>
+    <div class="lado-direito">
+      <h2>Lado Direito</h2>
+      <p>Esse é o conteúdo do lado direito. É separado visualmente e ocupa metade da tela.</p>
+    </div>
+  </div>
+</body>
+</html>
